@@ -3,7 +3,7 @@
 
 # DICTIONARY COMPREHENSION
 
-# dictionary comprehension is a cool and elegant way that helps us to create a dictionary.
+# dictionary comprehension is a cool and elegant way that helps us to initialize and create a dictionary.
 # Example one
 
 def create_dict(start, stop):
