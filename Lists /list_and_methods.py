@@ -8,6 +8,13 @@
 
 # creating an empty list.
 list_a = []
+print(list_a) # []
+print(type(list_a)) # <class "List">
+
+# Secondly list() function
+list_a = list() 
+print(list_a) # []
+print(type(list_a))  # <class "List">
 
 print(list_a)
 
@@ -115,6 +122,14 @@ print(ones)
 zeros = [0] * 10
 print(zeros)
 
+# LIST  UNPACKING IN PYTHON
+numbers = [1, 2, 3, 4]
+one, two, *rest = numbers
+print(one)
+print(two)
+print(rest)
+
+
 # -----  LIST METHODS -----
 
 # A list can be modified using the builtin list methods such as append, insert, pop, and remove, etc. The order of the elements in a list can be updated using the methods, reverse and sort which will be discussed next.
@@ -217,3 +232,11 @@ new_list2[0][1] = "a"
 
 print(list_3)
 print(new_list2)
+
+
+# MAIN TAKEAWAY
+# 1. A list is a data structure that holds an ordered collection of items
+# 2. lists are created by placing all items within square brackets [] separated by comma
+# 3. lists can be altered after their creation because they are mutable.
+# 4. lists can be created in two way either using the [] or the list() function
+# 5 Finally lists can be manipulated using the 11 lists methods
