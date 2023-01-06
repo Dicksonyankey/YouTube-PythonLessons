@@ -61,8 +61,8 @@ filter_salary3 = {item["name"]: item["salary"]
                   for item in workers if item["salary"] > 100000 if item["salary"] % 2 == 0}
 
 if __name__ == "__main__":
-    # print(create_dict(1,11))
-    # print(cube_dict1)
+    print(create_dict(1,11))
+    print(cube_dict1)
     print(update_car_price(car_prices))
     print(new_prices)
     print(filter_salary2)
