@@ -10,6 +10,6 @@
 
 
 **MAIN TAKEAWAY**
-1.using dict comprehension shorten the process of initializing a dictionary
+1.using dict comprehension shorten the process of initializing a dictionary.
 2.and it also make your code pythonic and reable ans intact
 3.it also makes you reduce the amount of code you write.
