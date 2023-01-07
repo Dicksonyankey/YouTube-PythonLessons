@@ -17,6 +17,7 @@ A programming language is said to support first-class functions if it treats fun
 **Example to demostrate first-class functions in Python**
 
 1. Storing a function in a variable.
+The importances of this is that Python functions are able to retain state between calls. This is because functions are objects that can be assigned to variables, and these variables can hold onto their state between function calls.
 
 ```python
 def transform_to_upper(text:str) -> str:
