@@ -24,9 +24,28 @@ def dispatch_dictionary(operator: str, x: int, y: int) -> float:
     }.get(operator, lambda: None)()
 
 
+def string_methods(method_name: str, text: str) -> str:
+    if method_name == "lower":
+        return text.lower()
+    elif method_name == "upper":
+        return text.upper()
+    elif method_name == "casefold":
+        return text.casefold()
+    elif method_name == "strip":
+        return text.strip()
 
 
-    
+
+def dict_solution(method_name: str, text: str) -> str:
+    return {
+        "lower": lambda: text.lower(),
+        "upper": lambda: text.upper(),
+        "casefold": lambda: text.casefold(),
+        "strip": lambda : text.strip()
+    }.get(method_name, lambda: f"This methods '{method_name}' doesn't exist.")()
+
+
+
 
 
 if __name__ == "__main__":
@@ -40,3 +59,7 @@ if __name__ == "__main__":
     print(dispatch_dictionary("mult", 10, 10))
     print(dispatch_dictionary("div", 10, 10))
     print(dispatch_dictionary("floor div", 10, 10))
+
+    print(dict_solution("lower", "PYTHON PROGRAMMING"))
+    print(dict_solution("upper", "python programming"))
+    print(dict_solution("strip", "python programming"))
