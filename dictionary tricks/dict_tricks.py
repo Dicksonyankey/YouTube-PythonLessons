@@ -11,6 +11,8 @@ def dispatch_arithmetic(operator: str, x: int, y: int) -> float:
     elif operator == "div":
         return x / y
 
+    return f"This operator '{operator}' doesn't exist."
+
 
 
 # Secod code example. treating the function as a first class function.
@@ -34,6 +36,8 @@ def string_methods(method_name: str, text: str) -> str:
     elif method_name == "strip":
         return text.strip()
 
+    return f"This methods '{method_name}' doesn't exist."
+
 
 
 def dict_solution(method_name: str, text: str) -> str:
@@ -52,7 +56,9 @@ if __name__ == "__main__":
     print(dispatch_arithmetic("add", 10, 10))
     print(dispatch_arithmetic("sub", 10, 10))
     print(dispatch_arithmetic("mult", 10, 10))
+    print(dispatch_arithmetic("multi", 10, 10))
     print(dispatch_arithmetic("div", 10, 10))
+
 
     print(dispatch_dictionary("add", 10, 10))
     print(dispatch_dictionary("sub", 10, 10))
