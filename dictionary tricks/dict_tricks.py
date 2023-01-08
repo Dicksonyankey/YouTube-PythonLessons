@@ -39,7 +39,6 @@ def string_methods(method_name: str, text: str) -> str:
     return f"This methods '{method_name}' doesn't exist."
 
 
-
 def dict_solution(method_name: str, text: str) -> str:
     return {
         "lower": lambda: text.lower(),
@@ -47,8 +46,6 @@ def dict_solution(method_name: str, text: str) -> str:
         "casefold": lambda: text.casefold(),
         "strip": lambda : text.strip()
     }.get(method_name, lambda: f"This methods '{method_name}' doesn't exist.")()
-
-
 
 
 if __name__ == "__main__":
