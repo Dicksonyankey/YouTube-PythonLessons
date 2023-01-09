@@ -38,6 +38,20 @@ while count != limit:
 ```
 so this is using the while loop to implement a counter in python. 
 
+```python
+user_data = 3
+count = 0
+
+while count != user_data:
+    for x in range(1,3):
+        print("fighting !!!!")
+    else:
+        print(f"Done fighting! {count + 1} time")
+        
+    count += 1
+    
+```
+
 
 ### 3. <u>using both while and for loop</u>
 4. Loop control statements
