@@ -9,6 +9,7 @@ i. A set in Python represents the mathematical notion of a set.
 
 ii. Once a set set is created, we cannot change its items, but we can add new items using the add() method.
 
+
 ### 2. How to create sets in python
 1. **using {}**
 ```python 
