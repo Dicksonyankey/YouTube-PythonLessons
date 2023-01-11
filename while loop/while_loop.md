@@ -185,11 +185,8 @@ while i <= 10:
     # Increment the loop variable
     i += 1
 
-
 ```
-
 ### 6. <u>Main takeaway.</u>
-
 1. Loops are used to perform iterative process. In other loops are used to execute the same code more than one.
 2. A counter needs to be coded  explicitly for while loop.
 3. The break keyword is used to break the executionof a loop.
