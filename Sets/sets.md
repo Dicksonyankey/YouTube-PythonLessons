@@ -142,7 +142,7 @@ print(new_set)
 ```
 
 - issubset() method
-Thismethodcheckswhetherallelementsofcall- ing set is present within a second set or not. It returns true if the call- ing set is subset of the second set, false otherwise.
+This method checks whether all elements of calling set is present within a second set or not. It returns true if the calling set is subset of the second set, false otherwise.
 
 
 ```python
