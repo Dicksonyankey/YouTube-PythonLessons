@@ -36,7 +36,7 @@ while count != limit:
     count += 1
 
 ```
-so this is using the while loop to implement a counter in python. 
+so this is using the while loop to implement a counter in python. below is another example
 
 ```python
 user_data = 3
