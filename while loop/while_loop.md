@@ -2,12 +2,9 @@
 
 **What you will learn**
 
-**Loops**
-Loops are a fundamental programming concept that allow a program to execute a block of code multiple times.They allow a program to perform repetitive tasks efficiently and can be used to process large amounts of data, input validation, and many other applications
-
 ### 1. <u>what are loops in python </u>
-Let us consider a scenario where we want to compare the value of the variable rsi_indicator multiple times. To address this situation, we need to update the variable each time manually and check it with the if statement.We keep repeating this until we check all the values that we are interested in. pyhton loops comes in two folds ie. while loop and for loop.
-so with that we can finally simpify the definitions of loops by saying, loops helps us to perfrom and repeat tasks known or unknown number times.
+
+Loops are a fundamental programming concept that allow a program to execute a block of code multiple times.They allow a program to perform repetitive tasks efficiently and can be used to process large amounts of data, input validation, and many other applications
 
 <br>
 
@@ -54,7 +51,22 @@ while count != user_data:
 
 
 ### 3. <u>using both while and for loop</u>
-4. Loop control statements
+we can also use while with for some common task in python. let's take a look at some example.
+
+```python
+user_data = 3
+count = 0
+while count != user_data:
+    for x in range(1, 3):
+        print("fighting !!!!")
+    else:
+        print(f"Done fighting! {count + 1} time")
+
+    count += 1
+
+
+```
+### 4. <u>Loop control statements</u>
     - the break keyword
     - the continue keyword
     - the pass keyword
