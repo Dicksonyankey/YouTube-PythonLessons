@@ -14,11 +14,11 @@ The while statement in python is used to repeat execution of code or block of co
 
 ```python
 while conditional expression:
-         code statement 0
-         code statement 1
-         code statement 2
-         ...
-         code statement n
+     code statement 0
+     code statement 1
+     code statement 2
+     ...
+     code statement n
 
 ```
 let's finally take a look at a Counter Example with the while loop.
