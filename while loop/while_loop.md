@@ -4,7 +4,7 @@
 
 ### 1. <u>what are loops in python </u>
 
-Loops are a fundamental programming concept that allow a program to execute a block of code multiple times.They allow a program to perform repetitive tasks efficiently. However we can also say that loops are sequence of instructions that is continally repeated until a condition is reached.
+Loops are a fundamental programming concept that allow a program to execute a block of code multiple times.They allow a program to perform repetitive tasks efficiently. However we can also say that loops are sequence of instructions that is continually repeated until a condition is reached.
 
 ### 2. <u>The while statement</u>
 - Syntax of while loops
