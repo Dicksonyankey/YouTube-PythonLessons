@@ -96,14 +96,41 @@ print(add_number())
 A variable declared outside the function is the global variable by default. Python provides the global keyword to use global variable inside the function. If we don't use the global keyword, the function treats it as a local variable. Let's understand the following example.
 
 ```python 
-# Local Variables
+# Initializing a Global variable
+message = "I LOVE PYTHON PROGRAMMING"
 
-def add_number():
-    x = 10
-    y = 20
-    result = x + y
-    return f"The total number = {result}"
+def display_msg():
+    global message
 
-print(add_number())
+    # local variable
+    msg = "Coding is Fun."
+    
+    # The (\n) stands for new line.
+    return f"Global : The message is  '{message}', \nLocal : The message is '{msg}'"
+
+print(display_msg())
 
 ```
+
+### Rules for the global Keyword.
+1. If a variable is assigned a value anywhere within the function’s body, it’s assumed to be a local unless explicitly declared as global.
+2. We Use global keyword to use a global variable inside a function.
+3. There is no need to use global keyword outside a function.
+
+
+### Constants in python.
+A constant is a special type of variable whose value cannot be changed.
+
+```python
+# Constants in python
+
+PI = 3.142
+GRAVITY = 9.8
+
+print(PI)
+print(GRAVITY)
+
+
+```
+
+
