@@ -122,9 +122,10 @@ print(display_msg())
 A constant is a special type of variable whose value cannot be changed.
 ```python
 from typing import Final
-# Constants in python
 
+# Constants in python
 PI : Final = 3.142
+
 # Trying to reassign will error out 
 PI += 1
 
@@ -137,7 +138,7 @@ print(GRAVITY)
 
 ```
 
-<center><img width=300 src="Screenshot 2023-01-19 at 3.21.29 am.png" alt="Error Image"/></center>
+<!-- <center><img width=300 src="Screenshot 2023-01-19 at 3.21.29 am.png" alt="Error Image"/></center> -->
 
 
 
