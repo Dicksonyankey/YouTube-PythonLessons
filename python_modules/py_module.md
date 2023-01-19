@@ -14,7 +14,7 @@
         - pandas library
         - numpy library
         - requests library
-    - Installing soecific versions
+    - Installing specific versions
 8. Most popular python library
     - Data Science
     - Graphics
