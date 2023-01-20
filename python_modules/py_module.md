@@ -230,13 +230,13 @@ math.floor(10.8)
 import math as m
 
 # Accessing the 'pi' attribute of the 'math' module
-m.pi
+print(m.pi)
 
 # Accessing the 'floor' method from the 'math'
-m.floor(10.8)
+print(m.floor(10.8))
 
-# Accessing the 'e' method from the 'math'
-m.e
+# Accessing the 'e' attribute from the 'math'
+print(m.e)
 
 ```
 
@@ -247,13 +247,13 @@ The other way to import a definition/module is to import all definitions in that
 from math import *
 
 # Accessing the 'pi' attribute of the 'math' module
-pi
+print(pi)
 
 # Accessing the 'floor' method from the 'math'
-floor(10.8)
+print(floor(10.8))
 
 # Accessing the 'e' method from the 'math'
-e
+print(e)
 ```
 
 **We can have selective import by implorting only one or more**
