@@ -213,10 +213,10 @@ The above example will import all definitions within the imported library. We ca
 import math
 
 # Accessing the 'pi' attribute of the 'math' module
-math.pi
+print(math.pi)
 
 # Accessing the 'floor' method from the 'math'
-math.floor(10.8)
+print(math.floor(10.8))
      
 
 # output = 3.141592653589793
