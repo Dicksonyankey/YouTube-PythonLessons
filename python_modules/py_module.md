@@ -196,6 +196,7 @@ Listed below are some of the most popular libraries used in different do- mains:
 ### 9. Practicing how to importing Modules in various ways.
 
 **Importing Python Modules**
+
 We can import any module, either internal or external into our code using the import statement, in this less we will take a look at **internal modules**. Take a look at below example:
 
 ```python
