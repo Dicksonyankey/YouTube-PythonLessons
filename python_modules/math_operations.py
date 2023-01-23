@@ -25,3 +25,11 @@ def factorial(n):
         i = i+1
         result = result * i
     return result
+
+def change_to_upper(operation: str ,text:str):
+    return {
+        "upper": lambda : text.upper()
+    }.get(operation, lambda:f"This {text}() method doesn't exist in this function!")()
+
+
+print(change_to_upper("upper","python programming"))

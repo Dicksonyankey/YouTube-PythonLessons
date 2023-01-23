@@ -1,7 +1,6 @@
-# -------  Dictionary trick that you can implement -----------
 
 # First code exaple is the same as the second code
-def dispatch_arithmetic(operator: str, x: int, y: int) -> float:
+def dispatch_arithmetic(operator: str, x: int, y: int):
     if operator == "add":
         return x + y
     elif operator == "sub":
@@ -17,7 +16,7 @@ def dispatch_arithmetic(operator: str, x: int, y: int) -> float:
 
 # Secod code example. treating the function as a first class function.
 # it is returning a dictionary object and the same time calling itself.
-def dispatch_dictionary(operator: str, x: int, y: int) -> float:
+def dispatch_dictionary(operator: str, x: int, y: int):
     return {
         "add": lambda: x + y,
         "sub": lambda: x - y,
