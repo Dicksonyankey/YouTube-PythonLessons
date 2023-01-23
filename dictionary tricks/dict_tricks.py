@@ -11,8 +11,6 @@ def dispatch_arithmetic(operator: str, x: int, y: int):
 
     return f"This operator '{operator}' doesn't exist."
 
-
-
 # Secod code example. treating the function as a first class function.
 # it is returning a dictionary object and the same time calling itself.
 def dispatch_dictionary(operator: str, x: int, y: int):
