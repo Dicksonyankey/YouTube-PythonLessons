@@ -1,4 +1,3 @@
-
 # First code exaple is the same as the second code
 def dispatch_arithmetic(operator: str, x: int, y: int):
     if operator == "add":
