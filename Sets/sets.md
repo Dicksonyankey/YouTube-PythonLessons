@@ -182,3 +182,5 @@ print(new_set3) # False
 1. Sets are unindexed and unordered collection of item which does not acccepts duplicates.
 2. As sets are unindexed and unordered, you cannot slice items from them.
 3. Once Sets are created you cannot change its items but we can add items into the set.
+
+
