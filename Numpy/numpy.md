@@ -212,5 +212,6 @@ print(arr.transpose())
 # resize the matrix
 arr.resize(1,9)
 print(arr)
-# Output:[[1 2 3 4 5 6 7 8 9]]
+
+# Output: [[1 2 3 4 5 6 7 8 9]]
 ```
