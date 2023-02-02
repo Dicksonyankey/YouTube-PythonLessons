@@ -182,7 +182,6 @@ pprint(new_arr)
 #   [ 6, 7, 8],
 #   [ 9, 10, 11] ]
 
-
 # Reshape the array dimension
 new_arr2=arr.reshape(3,4)
 print(new_arr2)
