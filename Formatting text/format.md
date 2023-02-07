@@ -11,7 +11,11 @@ String formatting is important when you want to build new strings that are using
 
 ```python 
 
+name = "Jane Smith"
+age = 30
+salary = 12000
 
+print(f"Hello there, My name is {name}. i'm {age} years old and my salary is ${salary}")
 
 ```
 
@@ -28,6 +32,13 @@ The format() method can be found on every string instance. It allows you to inse
 pie = 3
 
 print("I ate some {} and it was yummy".format(pie))
+
+name = "Jane Smith"
+age = 30
+salary = 12000
+
+# We casting the number values to string since we are working with only string.
+print("Hello there, My name is {}. i'm {} years old and my salary is ${}".format(name, str(age), str(salary)))
 
 ```
 
@@ -68,6 +79,6 @@ name = "Jane Smith"
 age = 30
 salary = 12000
 
-print("Hello there, " + "My name is " + name + " . I am " + str(age) + " and my salary is $" + str(salary) + ".")
+print("Hello there, " + "My name is " + name + " . I am " + str(age) + " years old and my salary is $" + str(salary) + ".")
 
 ```
