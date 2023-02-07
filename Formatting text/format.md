@@ -45,3 +45,29 @@ An old, deprecated way of formatting strings, which you might end up seeing in o
 ```
 
 ### **String Concatenation**
+
+It’s very easy to use the `+ operator` for string concatenation. This operator can be used to add multiple strings together. However, the arguments must be a string. Here, The `+ Operator` combines the string that is stored in the number1 and number2 and stores in another variable result.
+
+
+**Examples**
+
+```python 
+# Declaring two variables 
+number1 = 100
+number2 = 200
+
+# Adding the two variables and storing the value to a variables called result.
+result = number1 + number2
+print(result)
+```
+Here is another example
+```python 
+# Declaring some varibales 
+
+name = "Jane Smith"
+age = 30
+salary = 12000
+
+print("Hello there, " + "My name is " + name + " . I am " + str(age) + " and my salary is $" + str(salary) + ".")
+
+```
