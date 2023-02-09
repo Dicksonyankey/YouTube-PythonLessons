@@ -82,3 +82,110 @@ salary = 12000
 print("Hello there, " + "My name is " + name + " . I am " + str(age) + " years old and my salary is $" + str(salary) + ".")
 
 ```
+
+### **Number Formatting in python**
+
+In this section of the tutorials, we will be looking at how to format numbers correctly in python.
+Let's look at some examples;
+
+**1. Formatting float as integer**
+
+```python 
+# Declaring a floating point number 
+number = 9.98747
+
+# Formatting the floating point number into an integer
+print(f"{number:.0f}") # 10
+
+# Example 2 
+
+number1 = 29.3674
+
+print("{:.0f}".format(number1))
+
+```
+
+**2. Rounding floaing numbers from 1 - n decimal places**
+
+```python 
+# Declaring a floating point number 
+number = 9.98747
+
+# Formatting the floating point number into an integer
+print(f"{number:.1f}") 
+
+
+number1 = 29.3674
+# Rounding to 2 decimal places 
+print("{:.2f}".format(number1))
+
+
+number2 = 10.36746736
+# Rounding to 4 decimal places 
+print("{:.4f}".format(number1))
+
+
+number3 = 29.367478928874
+# Rounding to 6 decimal places 
+print("{:.6f}".format(number1))
+```
+
+
+**3. Formatting a floating number as percentage**
+
+```python 
+
+# finding 25 percent of 150
+number = 150
+result = (25/100) * number
+print(f"The finally answer is {result:.2f}") # 37.50
+
+
+# finding the percentage of 37.50 in 150
+num1 = 37.50
+num2 = 150
+result1 = (num1/num2) * 100
+print(f"The finally answer is {result1:.2f}%") # 25.00%
+
+```
+
+**4. Left padding**
+there is a catch in handling the padding, there should not be space in the format.for example `: > 4`  or `:> 4`. these two format will not work. the accepted one is `:>4` which void of spaces.
+
+```python 
+print("{:>4}".format(5.9980))
+
+print("{:>7}".format(5.9980))
+
+# The list of items
+tables = ["Books", "Mobile phones", "Laptops", "Magic Keyboard"]
+
+# This is a format for the heading
+print("{}{:>15}".format("Number","Items"))
+
+# This for loop will populate the data into the headers.
+for indx, item in enumerate(tables):
+    print("{:>3}{:>20}".format(indx, item))
+```
+
+**5. Right padding**
+```python 
+# make a full size of 7 and fill with zero to the right
+print("{:<07}".format(5.9980))
+
+# make a full size of 20 and fill with zero to the right
+print("{:<020}".format(5.9980))
+
+
+# TO also center a text you can use;
+print('{:^24s}'.format("MyString"))
+
+# To separate integers with commas eg. 5,000,000
+print('{:,}'.format(5000000))
+
+
+# To format by add .00 to the last value eg. 1,000.00
+print('{:,.2f}'.format(1000))
+```
+
+#### ThANK YOU FOR LEARNING. HAPPY CODING
