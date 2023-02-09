@@ -122,12 +122,12 @@ print("{:.2f}".format(number1))
 
 number2 = 10.36746736
 # Rounding to 4 decimal places 
-print("{:.4f}".format(number1))
+print("{:.4f}".format(number2))
 
 
 number3 = 29.367478928874
 # Rounding to 6 decimal places 
-print("{:.6f}".format(number1))
+print("{:.6f}".format(number2))
 ```
 
 
@@ -168,7 +168,7 @@ for indx, item in enumerate(tables):
     print("{:>3}{:>20}".format(indx, item))
 ```
 
-**5. Right padding**
+**5. Right padding** 
 ```python 
 # make a full size of 7 and fill with zero to the right
 print("{:<07}".format(5.9980))
