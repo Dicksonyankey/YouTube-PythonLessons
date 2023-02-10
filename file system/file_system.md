@@ -26,3 +26,104 @@ The file object has several methods to make it easy to work with the underlying 
 3. **file.readlines()**: This method reads all of the lines of a file into a list. 
 4. **file.write()**: This method writes output to the file. 
 5. **file.seek()**: This method is used to move the file object position to a certain location in the file.
+
+
+### **Reading and Writing Files**
+
+**The `open()` Method**
+The `open()` method is a built-in function in Python that you can use to read and write a file. It takes two arguments, the filename and a mode, for example, `open(filename, mode)`, and returns a file object that you can manipulate.
+
+Here is table of some of the modes that can be passed to the open function to determine the kind of file object you will get back; modes for Text files
+
+| Mode   |      Use      | 
+|----------|:-------------:|
+| r        |  Read mode. only allows you to read files | 
+| w        |    Write mode. Used to write data to a file. it overwrite any existing files with the same file name| 
+| a        | Append mode. This is the same as the write mode, except that it adds the data to the end of the file if its exist (or creates new file if not.) | 
+| r+       | Handles both reading and writing | 
+
+
+The table below contains modes for reading and writing to a binary file
+| Mode   |      Use      | 
+|----------|:-------------:|
+| rb        |  Reads a binary file | 
+| wb        |   Writes to a binary file| 
+| rb+       | Combines special mode for working with binary file objects | 
+
+
+### **Creating, Reading and Writing to Files**
+
+let's start this section off by creating a file. To create a file, we will be using the `open()` method and then pass in the `filename` and the `mode` which is `w` in this case. Now if there is an existing file with the same name that we are about to create, pyhton will overwrite that file. But for our case we starting from scretch so we do not have a existing file in our directory.
+
+```python
+# creating a text file using the open() method,
+f = open("file1.txt", "w")
+
+# writing some data to the file1.txt
+f.write("Hello World, i have successfully created my first file using the open() method")
+
+# Now we close the file. remember to always close the after you are done working with the file.
+f.close()
+```
+
+Now a new file with the name `file1.txt` will appear in you directory. you check to comfirm whether the text you wrote to the file has successfully appear.
+
+let's add more conetent to the file, open the file in append mode `"a"`
+
+
+```python 
+# Opening the file in append mode
+f = open("file1.txt", "a")
+
+# Adding content to end of the file
+f.write("I love coding using Python Programming")
+
+# Closing the file 
+f.close()
+```
+
+Always remember that you can not write or append to the file without specifying the mode in the `open()` function, forgetting the mode will always raise an error. now your file has been appended at the end of the file. you check to comfirm. 
+
+
+Now it's time for us to read some file. what mode will we use ?, you guessed it right `"r"` mode.
+
+```python 
+# opening the file in the read mode 
+f = open("file1.txt", "r")
+
+# loading the entire file into memory using the read()
+f.read()
+
+# always remember to close the file after reading 
+f.close()
+```
+
+**Reading and Writing mode using `"r+"`**
+
+```python 
+# opening the file in the read and write mode 
+f = open("file1.txt", "r+")
+
+# using the readline() reads a single line from the file into memory 
+f.readline()
+
+# always remember to close the file after reading 
+f.close()
+```
+
+### **The with Content Manager**
+
+Python comes with a handy context manager for working with files, which helps in writing neater code and freeing resources automatically when the code exits so that you do not have to. Let's read a file using the `with` keyword with the `open()`;
+
+**when using the context manager, reading a file doesn't strickly require you to pass in the mode, however when you want to write you to a file, you need to explicitly pass the mode else python will error out.**
+```python 
+# opening the file with the with keyword
+with open("file1.txt") as f:
+
+    # using the readline() reads a single line from the file into memory 
+    data = f.readline()
+    
+    # displaying the content in the file.
+    print(data)
+```
+
