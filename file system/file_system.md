@@ -232,8 +232,26 @@ sample = {
     "Age" : 34
 }
 
+# converting it to json file
 json_sample = json.dumps(sample)
 print(json_sample)
 print(type(json_sample))
 
 ```
+
+**2. `json loads()`**
+If you want to decode the JSON object, you can use json.loads() to do so. We are going to add some code in our original code to illustrate this:
+
+
+```python
+import json
+
+# converting it back to dictionary
+original_sample = json.loads(json_sample)
+print(original_sample)
+print(type(original_sample))
+
+```
+
+Congratulations 😊 😊 😊 😊
+This brings us to the end of this tutorials on the python file System.
